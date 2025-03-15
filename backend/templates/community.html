@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Animation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 2000px; /* to make the page scrollable */
+        }
+
+        .fade-in-element {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 1s, transform 1s;
+        }
+
+        .fade-in-element.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .content {
+            padding: 100px;
+            text-align: center;
+        }
+
+        .content h2 {
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        .content p {
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content fade-in-element">
+        <h2>Element 1</h2>
+        <p>This element will fade in when it comes into view on scroll.</p>
+    </div>
+
+    <div class="content fade-in-element">
+        <h2>Element 2</h2>
+        <p>This is another element that will fade in when you scroll down.</p>
+    </div>
+
+    <div class="content fade-in-element">
+        <h2>Element 3</h2>
+        <p>Scroll down to see more elements fade in.</p>
+    </div>
+
+    <script>
+        // Function to check the visibility of elements
+        function checkScroll() {
+            const elements = document.querySelectorAll('.fade-in-element');
+
+            elements.forEach(element => {
+                const rect = element.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                    element.classList.add('visible');
+                }
+            });
+        }
+
+        // Run the checkScroll function on scroll
+        window.addEventListener('scroll', checkScroll);
+
+        // Initial check in case elements are already in view when the page loads
+        checkScroll();
+    </script>
+
+</body>
+</html>

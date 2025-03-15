@@ -1,0 +1,576 @@
+/* Navbar */
+.navbar {
+    background-color: #77DD77; /* Theme color */
+    width: 100%; /* Ensures full width */
+}
+body{
+    background-image: url('../images/mint\ \(1\).jpg');
+
+}
+
+.navbar .navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #ffffff; /* White text color for navbar brand */
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important; /* White text for nav links */
+    font-size: 1rem;
+}
+
+/* Navbar Hover Effects */
+.navbar-nav .nav-link:hover {
+    color: #66cc66; /* Slightly darker hover color for contrast */
+}
+
+/* Footer */
+.footer {
+    background-color: #77DD77; /* Your theme color */
+    color: white;
+    padding: 40px 20px; /* Top and bottom padding */
+    width: 100%;
+    text-align: center; /* Center the footer content */
+    position: relative;
+}
+
+/* Footer Links */
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Social Icons */
+.footer .social-icons a {
+    margin: 0 10px;
+    font-size: 20px;
+    transition: transform 0.3s;
+}
+
+.footer .social-icons a:hover {
+    transform: scale(1.2); /* Slightly enlarge social icons on hover */
+}
+
+/* Footer Small Text */
+.footer .small-text {
+    font-size: 14px;
+    color: #e0e0e0; /* Light grey text for copyright */
+}
+
+/* Media Queries for Footer */
+@media (max-width: 767px) {
+    .footer .small-text {
+        font-size: 12px; /* Smaller font size for smaller screens */
+    }
+}
+
+
+
+
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color:#e0f7fa;
+}
+
+.hero-banner {
+    background-size: cover;
+    color: black;
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+    
+}
+.hero-banner h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.hero-banner p {
+    font-size: 1.25rem;
+}
+.hero-banner .btn {
+    margin: 10px;
+}
+.feature {
+    text-align: center;
+    padding: 20px;
+}
+.feature i {
+    font-size: 3rem;
+    color: #77DD77;
+}
+.feature h3 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+.intro-section {
+    background-color: #e0f7fa;
+    padding: 50px 20px;
+}
+.testimonial {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+.blog-section {
+    padding: 50px 20px;
+}
+.footer {
+    background-color: #77DD77;
+    color: #ffffff;
+    padding: 20px;
+    width: 100%;
+}
+.footer a {
+    color: #ffffff;
+}
+
+/* Falling Symbols Styles */
+.falling-symbols {
+    position: absolute;
+    top: 10%; /* Start the symbols lower on the page */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.falling-symbols i {
+    font-size: 2rem;
+    color: #77DD77;
+    opacity: 0;
+    animation: fall 5s ease-in-out infinite;
+    position: absolute;
+}
+
+.falling-symbols i:nth-child(1) {
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.falling-symbols i:nth-child(2) {
+    left: 30%;
+    animation-delay: 1s;
+}
+
+.falling-symbols i:nth-child(3) {
+    left: 50%;
+    animation-delay: 2s;
+}
+
+.falling-symbols i:nth-child(4) {
+    left: 70%;
+    animation-delay: 3s;
+}
+
+.falling-symbols i:nth-child(5) {
+    left: 90%;
+    animation-delay: 4s;
+}
+
+@keyframes fall {
+    0% {
+        opacity: 0;
+        transform: translateY(-150px); /* Start higher */
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(250px); /* Mid-point */
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(500px); /* Fall lower */
+    }
+}
+
+
+.btn-theme:hover {
+background-color: #66cc66;
+transform: scale(1.05);
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 767px) {
+    .hero-banner h1 {
+        font-size: 1.75rem;
+    }
+    .hero-banner p {
+        font-size: 1rem;
+    }
+    .feature h3, .testimonial h4, .blog-item h4 {
+        font-size: 1.25rem;
+    }
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+    .hero-image-container img {
+        width: 100%;
+        height: auto;
+    }
+    .feature {
+        margin-bottom: 20px;
+    }
+    .footer .container {
+        text-align: center;
+    }
+    .footer a {
+        display: inline-block;
+        margin-top: 10px;
+    }
+}
+
+
+.btn-theme {
+background-color: #77DD77;
+color: #fff;
+font-size: 1.2rem;
+padding: 12px 30px;
+border-radius: 25px;
+text-decoration: none;
+transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-theme:hover {
+background-color: #66cc66;
+transform: scale(1.05);
+}
+
+
+
+.btn-1 {
+display: flex;
+justify-content: center; /* Center horizontally */
+align-items: center; /* Center vertically */
+height: 20vh; /* Make sure the container takes full height of the viewport */
+}
+
+
+/*feature*/
+/* Reset and Box Sizing */
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* Light gray for a clean background */
+    color: #333; /* Default text color */
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Custom Card Styling */
+.custom-card {
+    border: none; /* Remove default border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover animation */
+}
+
+.custom-card:hover {
+    transform: translateY(-10px); /* Lift effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Feature Icon Styling */
+.feature-icon {
+    font-size: 3rem; /* Large size for emphasis */
+    color: #5bc0de; /* Bootstrap teal color */
+    margin-bottom: 15px;
+}
+
+/* Card Title */
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #343a40; /* Darker gray */
+}
+
+/* Card Text */
+.card-text {
+    font-size: 1rem;
+    color: #6c757d; /* Bootstrap muted text color */
+    margin-bottom: 20px;
+}
+
+/* Custom Button */
+/* Sky Blue Custom Button */
+.btn-custom {
+    background-color: #66cc66; /* Sky Blue */
+    color: #fff; /* White text for contrast */
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: rgb(198, 231, 198); /* Slightly darker Sky Blue on hover */
+    transform: scale(1.05); /* Subtle enlargement on hover */
+}
+
+
+/* Row Spacing */
+
+/* Responsive Design */
+@media (max-width: 991px) { /* For tablets */
+    .card-title {
+        font-size: 1.25rem;
+    }
+    .card-text {
+        font-size: 0.9rem;
+    }
+    .feature-icon {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 576px) { /* For mobile devices */
+    .feature-icon {
+        font-size: 2rem;
+    }
+    .card-title {
+        font-size: 1.1rem;
+    }
+    .card-text {
+        font-size: 0.85rem;
+    }
+    .btn-custom {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+}
+/*features*/
+
+
+/*what makes us unqiue*/
+/* General section styling */
+.unique-section {
+    position: relative;
+  
+    background-size: cover;
+    padding: 100px 0;
+    color: white;
+    text-align: center;
+}
+
+/* Section title styling */
+.section-title {
+    font-size: 2.5rem;
+    color: black;
+    
+    margin-bottom: 30px;
+}
+
+/* Bubbles container */
+.unique-section-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+    z-index: 1;
+    flex-wrap: wrap;  /* Allow wrapping on smaller screens */
+}
+
+/* Bubbles styling */
+.bubble {
+    background: linear-gradient(145deg, rgba(198, 255, 204, 0.7), rgba(174, 235, 255, 0.7));
+
+    padding: 30px 40px;
+    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    transform: scale(1);
+}
+
+/* Bubble content styles */
+.bubble-content {
+    text-align: center;
+    color: #333;
+}
+
+.bubble-content h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #2e2e2e;
+}
+
+.bubble-content p {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Bubbles floating animation */
+.bubble-1 {
+    animation: float 6s ease-in-out infinite;
+}
+
+.bubble-2 {
+    animation: float 7s ease-in-out infinite;
+}
+
+.bubble-3 {
+    animation: float 8s ease-in-out infinite;
+}
+
+/* Floating effect */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-25px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Hover effect for interactivity */
+.bubble:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .unique-section-content {
+        flex-direction: column;
+    }
+
+    .bubble {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+
+/*what makes us unqiue*/
+
+
+/*team*/
+/* Team Section Styling */
+.team-section {
+    position: relative;
+   
+    background-size: cover;
+    padding: 80px 0;
+    color: white;
+    text-align: center;
+}
+
+/* Add a semi-transparent overlay to improve text readability */
+.team-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 0;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 2.5rem;
+    color: #fff;
+    z-index: 1;
+    position: relative;
+}
+
+/* Team Content Container */
+.team-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Team Member */
+.team-member {
+    background: rgba(255, 255, 255, 0.8); /* Slight white background */
+    border-radius: 10px;
+    width: 220px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Team Member Image */
+.team-photo {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+/* Team Member Title */
+.team-member h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Team Member Role */
+.team-member p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .team-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+/* team */
